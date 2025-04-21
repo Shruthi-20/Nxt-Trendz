@@ -37,3 +37,88 @@
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.popup-container {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+}
+
+.popup-heading {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.payment-form label {
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.payment-form label:has(input:disabled) {
+  color: gray;
+}
+
+.order-summary {
+  margin-bottom: 20px;
+}
+
+.total-items{
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: black;
+}
+
+.total-amount{
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: black;
+}
+
+.confirm-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success-msg {
+  margin-top: 15px;
+  color: green;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: center;
+}
